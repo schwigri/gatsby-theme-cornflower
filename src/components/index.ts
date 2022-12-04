@@ -5,6 +5,7 @@ export * from "./LanguageSwitcher";
 export * from "./Layout";
 export * from "./Logo";
 export * from "./Main";
+export * from "./Seo";
 export * from "./Sidebar";
 export * from "./SidebarLayout";
 export * from "./TopBar";
