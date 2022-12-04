@@ -4,7 +4,7 @@ import { sidebar } from "../Sidebar/sidebar.css";
 
 export const sidebarLayout = style({
 	display: "grid",
-	gap: theme.global.spacing,
+	gap: theme.responsive.spacing,
 	gridTemplateColumns: "1fr",
 	marginLeft: "auto",
 	marginRight: "auto",
