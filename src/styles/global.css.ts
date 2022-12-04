@@ -21,6 +21,7 @@ export const theme = createGlobalThemeContract({
 		small: "font-sizes--small",
 		medium: "font-sizes--medium",
 		large: "font-sizes--large",
+		base: "font-sizes--base",
 	},
 	global: {
 		contentWidth: "global--content-width",
@@ -36,6 +37,7 @@ export const theme = createGlobalThemeContract({
 		18: "pixels--18",
 		20: "pixels--20",
 		22: "pixels--22",
+		24: "pixels--24",
 		26: "pixels--26",
 		28: "pixels--28",
 		32: "pixels--32",
@@ -62,6 +64,7 @@ globalStyle(":root", {
 			small: theme.pixels[14],
 			medium: theme.pixels[16],
 			large: theme.pixels[22],
+			base: theme.pixels[18],
 		},
 		global: {
 			contentWidth: "640px",
@@ -77,6 +80,7 @@ globalStyle(":root", {
 			18: "1.125rem",
 			20: "1.25rem",
 			22: "1.375rem",
+			24: "1.5rem",
 			26: "1.625rem",
 			28: "1.75rem",
 			32: "2rem",
@@ -131,8 +135,9 @@ globalStyle(":root", {
 			vars: assignVars(theme.fontSizes, {
 				xSmall: theme.pixels[12],
 				small: theme.pixels[16],
-				medium: theme.pixels[20],
-				large: theme.pixels[26],
+				medium: theme.pixels[18],
+				large: theme.pixels[24],
+				base: theme.pixels[20],
 			}),
 		},
 	},
@@ -147,8 +152,27 @@ globalStyle("body", {
 	margin: 0,
 });
 
+globalStyle("h1, h2, h3, h4, h5, h6", {
+	fontWeight: 700,
+	lineHeight: 1,
+	margin: "1em 0 0.5em",
+});
+
+globalStyle("h2", {
+	fontSize: theme.fontSizes.medium,
+});
+
+globalStyle("h3", {
+	fontSize: theme.fontSizes.base,
+});
+
+globalStyle("h4", {
+	fontSize: theme.fontSizes.medium,
+});
+
 globalStyle("p", {
 	lineHeight: 1.4,
+	margin: "0 0 1em",
 });
 
 globalStyle("a", {
