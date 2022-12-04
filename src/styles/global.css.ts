@@ -62,9 +62,9 @@ globalStyle(":root", {
 		fontSizes: {
 			xSmall: theme.pixels[10],
 			small: theme.pixels[14],
-			medium: theme.pixels[16],
+			medium: theme.pixels[18],
 			large: theme.pixels[22],
-			base: theme.pixels[18],
+			base: theme.pixels[16],
 		},
 		global: {
 			contentWidth: "640px",
@@ -135,9 +135,9 @@ globalStyle(":root", {
 			vars: assignVars(theme.fontSizes, {
 				xSmall: theme.pixels[12],
 				small: theme.pixels[16],
-				medium: theme.pixels[18],
+				medium: theme.pixels[20],
 				large: theme.pixels[24],
-				base: theme.pixels[20],
+				base: theme.pixels[18],
 			}),
 		},
 	},
