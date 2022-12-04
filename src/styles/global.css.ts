@@ -147,7 +147,7 @@ globalStyle("body", {
 	backgroundColor: theme.colors.background,
 	color: theme.colors.copy,
 	fontFamily: "Alexandria, sans-serif",
-	fontSize: theme.fontSizes.medium,
+	fontSize: theme.fontSizes.base,
 	lineHeight: 1,
 	margin: 0,
 });
