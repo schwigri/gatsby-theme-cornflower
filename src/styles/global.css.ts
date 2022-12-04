@@ -53,7 +53,7 @@ globalStyle(":root", {
 		colors: {
 			background: "#fbfaff",
 			copy: "#02000a",
-			link: "#007aff",
+			link: "#004cff",
 			surface: "#f2f0ff",
 			surfaceAccent: "#eae6ff",
 		},
