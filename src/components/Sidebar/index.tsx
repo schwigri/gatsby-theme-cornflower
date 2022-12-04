@@ -9,13 +9,7 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = (props) => {
 	const { children } = props;
 
-	return (
-		<aside className={styles.sidebar}>
-			<span>Sidebar</span>
-
-			{children}
-		</aside>
-	);
+	return <aside className={styles.sidebar}>{children}</aside>;
 };
 
 Sidebar.propTypes = {
